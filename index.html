@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viweport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Desi Gym </title>
+    <title>SHRI RAM GYM</title>
 </head>
 <link rel="stylesheet" href="css/style.css">
 <style>
@@ -12,44 +12,58 @@
     body{
         margin: 5px;
         padding: 5px;
-        background: url('img/bg.jpg');
-    }
+        background: url('file:///C:/Users/patle/gym%20web%20html/img/r1.jpg');   
+    } 
     .left {
+        padding: 5px 2px;
         position: absolute;
         left: 34px;
-        top: 43px;
+       
         display: inline-block;
        /* border: 2px solid red;*/
     }
-    .left img{width: 70px;
+    .left img{
+        top:30px;
+        width: 80px;
     }
     .left div{
         text-align: center;
         line-height: 19px;
-        font-size: 15px;
-        color: rgb(227, 30, 30);
-        
+        font-size: 12px;
+        color: black;
+        text-shadow: 0 0 5px #fff,
+        0 0 10px  #fff, 0 0 15px  #fff,
+        0 0 20px #0073e6, 0 0 25px #0073e6,
+        0 0 30px #0073e6, 0 0 35px #0073e6;
     }
     .mid {
-        display: block ;
-        width: 36%;
-        margin: 29px auto;
+        display: flex ;
+        width: 45%;
+        margin: 30px auto;
        /* border: 2px solid yellow;*/
     }
     .mid div{
-        text-align: center;  
-        font-size: 5px;
-        font-family:  'Baloo bhai', cursive;
+        
+        font-size: 15px;
+        font-family: ui-rounded;
     }
     .navbar{
         display: inline-block;
+        top:43px;
+        position: sticky;
     }
     .navbar li{
         display: inline-block;
         font-size: 15px;
+        color:black;
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff, 0 0 15px  #fff,
+        0 0 20px #0073e6, 0 0 25px #0073e6,
+        0 0 30px #0073e6, 0 0 35px #0073e6;
     }
     .navbar li a{
-        color: white;
+        color: rgb(0, 0, 0);
+        padding: 70px 25px;
         text-decoration: none;
     }
     .navbar li a:hover, .navbar li a.active{
@@ -63,57 +77,137 @@
        /* border: 2px solid green;*/
     }
     .btn{
-        font-family: 'Baloo bhai', cursive;
-        margin: 0px 9px;
-        background-color: darkgray;
-        padding: 5px 6px;
-        border-radius: 15px;
-        font-size: 10px;
+        position: relative;
+        font-family: ui-rounded;
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+        background-color: gray;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
         cursor: pointer;
+        transition: width .5s,
+        border-radius .5;
     }
-    .btn:hover{
-        background-color: rgb(231, 139, 34);
+     .btn *{
+          position: absolute;
+          font-family: ui-rounded;
+          nav-down: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          transition: opacity .25s;
     }
-    .container{
+    .icon{
+     opacity: 0;
+    }
+    .btn:focus{
+     width: 30px;
+     background-color: red;
+     border-radius: 50%;
+    }
+    .btn:focus .text{
+     opacity: 0;
+    }
+    .btn:focus .icon{
+     opacity: 1;
+     transition-delay: .5s;
+    }
+
+    .container {
        /* border: 2px solid green;*/
         margin: 160px 80px;
         padding: 75px ;
         width: 35%;
         border-radius: 30px;
+        color: black;
+        text-shadow: 0 0 5px #fff,
+        0 0 10px  #fff, 0 0 15px  #fff,
+        0 0 20px #0073e6, 0 0 25px #0073e6,
+        0 0 30px #e60013, 0 0 35px #0073e6;
     }
     form{
         text-align: center;
+
         display: block;
-        width: 508px;
+        width: 608px;
+        margin: 500px;
         padding: 1px;
         /*border: 2px solid black;*/
         margin: 3px auto;
         font-size: 25px;
         border-radius: 8px;
-        font-family: 'Baloo bhai', cursive;
+        font-family: ui-rounded;
     }
+    h1{
+        text-align: center;
+    }
+    input[type="text" i] {
+    padding: 5px 2px;
+    width: 450px;
+    font-family: ui-rounded;
+}
     .container button{
         text-align: center;
         display: block;
         width: 23%;
-        margin: auto;
-
+        margin: 5px auto;
+    }
+    header{
+        top:0px;
+        background-color: black;
+        position: sticky;
+        padding: 1px 2px;
+    }
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        font-family: ui-rounded;
+        text-decoration: underline;
+        color: #0073e6;
+        text-shadow: 0 0 5px #fff,
+         0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    
+    h3{
+        font-size: 25px;
+        padding: 5px 2px;
+        width: 450px;
+        color: black;
+        font-family: ui-rounded
+        
+    }
+    h4{
+        font-size: 25px;
+        padding: 5px 2px;
+        width: 450px;
+        color: black;
+        font-family: ui-rounded
+        
+    }
+    h5{
+        font-size: 25px;
+        padding: 5px 2px;
+        width: 450px;
+        color: black;
+        font-family: ui-rounded
+        
     }
 </style>
 <body>
     <header class "header">
         <!-- Left box for logo-->
         <div class="left">
-            <img src="img/gym.jpg" alt="">
-            <div>Desi Gym</div>     
+            <img src="file:///C:/Users/patle/v2.jpg" alt="">
+            <div>SHRI RAM GYM</div>     
         </div>
         <!--mid box for navbar-->
         <div class="mid" >
-            <ul class="mid">
-                <li><a href="#" class=active>HOME</a></li>
-                <li><a href="#" >Fitness calculator</a></li>
-                <li><a href="#" >About Us</a></li>
-                <li><a href="#" >Content Us</a></li>
+            <ul class="navbar">
+                <li><a href="https://twitter.com/patlevinay2003/media" class=active>HOME</a></li>
+                <li><a href="https://www.calculator.net/calorie-calculator.html" >Fitness calculator</a></li>
+                <li><a href="file:///C:/Users/patle/persnol.html" >Fill The Form</a></li>
+                <li><a href="file:///C:/Users/patle/my%20web%20page.html" >Content Us</a></li>
             </ul>
         </div>
         <!-- Right box for buttons-->
@@ -123,16 +217,16 @@
         </div>
     </header>
     <div class="container">
-        <h1>JOIN DESI GYM IN SEONI</h1>
+        <h1>Join Shri Ram Gym in Seoni</h1>
         <form action="noaction.php">
             <div class="form.group">
                 <input type="text" name="" placeholder="enter your name">
             </div>
             <div class="form.group">
-                <input type="text" name="" placeholder="enter your age">
+                <input type="text" name="" placeholder="enter your age" required><br/>
             </div>
             <div class="form.group">
-                <input type="text" name="" placeholder="enter your Gender">
+                <input type="text" name="" placeholder="enter your Gender" required><br/>
             </div>
             <div class="form.group">
                 <input type="text" name="" placeholder="enter your locality">
@@ -143,8 +237,62 @@
             <div class="form.group">
                 <input type="text" name="" placeholder="enter your weight">
             </div>
-            <button class="btn">SUBMIT</button>
+            <div class="form.group">
+                <input type="text" name="name" placeholder="Choose a courses" required><br/>
+            </div>
+            <div class="form.group">
+                <input type="text" name="name" placeholder="course Fees " required><br/>
+            </div>
+            <div class="form.group">
+                <input type="text" name="name" placeholder="course duration" required><br/>
+            </div>
+             <button class="btn">
+                <span class="text">Submit</span>
+                <i class="ri-check-line icon"></i>
+           </button>
         </form>
+        <h3>A Perfect Fitness Zone for Men And Women</h3> 
+        <div id="tribute-data">
+			<h3 class="title-Shri Ram Gym">About the Shri Ram Gym </h3>
+			<p>
+				☛ Chest Press Machine<br><br>
+				☛ Seated Dip Machine.<br><br>
+                ☛ Chest Fly Machine.<br><br>
+                ☛ Bench Press.<br><br>
+                ☛ Incline Bench Press.<br><br>
+                ☛ Decline Bench Press.<br><br>
+                ☛ Adjustable Bench.<br><br>
+                ☛ Olympic Weight Bench. <br><br>
+			</p>
+		</div>   
+
+        <h4>Our popular fitness courses</h4> 
+        <div id="tribute-data">
+			<h4 class="title-Shri Ram Gym">About the Our popular fitness courses Fees courses month</h4>
+			<p>
+				☛ GGFI Online Advanced Personal Training  -- Amount - 3000 RS/-<br><br>
+				☛ GGFI Offline Advanced Personal Training -- Amount - 3500 RS/-<br><br>
+                ☛ GGFI Offline Advanced Personal Training + Skill India Government Certification   -- Amount - 4000 RS/-<br><br>
+			</p>
+		</div>  
+        <h5>Other courses</h5>
+        <div id="tribute-data">
+			<h3 class="title-Shri Ram Gym">About the Other courses Fees courses month</h3>
+			<p>
+				☛ Female Fitness   -- Amount - 500 RS/- <br><br>
+                ☛ Special Population & Medical Conditions   -- Amount - 600 RS/-<br><br>
+                ☛ Sports Injuries   -- Amount - 700 RS/-<br><br>
+                ☛ Calories Counting   -- Amount - 800 RS/-<br><br>
+                ☛ Intermittent Fasting   -- Amount - 900 RS/-<br><br>
+                ☛ Quick Result Workout   -- Amount - 1000 RS/-<br><br>
+                ☛ Functional training   -- Amount - 1500 RS/-<br><br>			
+			</p>
+		</div>   
     </div>
+    For more information,
+		check out
+		<a id="tribute-link" href="#">
+        {<small>@<a href="https://lnctu.ac.in//"> Shri Ram Gym.</a></a></small>}
+		[<small>Developed by @<a href="https://www.youtube.com/@codewithvinay03">Vinay Patle.</a></a></small>]
 </body>
 </html>
